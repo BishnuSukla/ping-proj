@@ -1,0 +1,54 @@
+@import '../../styles/main.scss';
+
+.shopping-wrapper{
+    &__back{
+        @include flex(row, flex-end);
+        &__link{
+            @include flex;
+            font-size: 16px;
+            a{
+                color: $link-color;
+                text-decoration: none;
+            }
+        }
+        margin-bottom: 20px;
+    }
+
+    &__items-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        place-items: center;
+    
+        &__item{
+            min-height:200px;
+            max-height:250px;
+            width:350px;
+            background-color: $payment-bg-color;
+            color:$mui-input-color;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            h4{
+                margin-top:20px;
+                flex-grow: 1;
+                text-align: center;
+            }
+    
+            img{
+                width:350px;
+                height:100px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+    
+            &__action{
+                text-align: center;
+                padding:5px;
+            }
+        }
+    
+    }
+}
+

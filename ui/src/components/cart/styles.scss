@@ -1,0 +1,38 @@
+@import '../../styles/main.scss';
+
+.cart-wrapper{
+    margin:50px;
+    width:80vw;
+
+    &__back{
+        @include flex(row, flex-start);
+        &__link{
+            @include flex;
+            font-size: 14px;
+            a{
+                color: $link-color;
+                text-decoration: none;
+            }
+        }
+        margin-bottom: 20px;
+    }
+}
+
+.cart{
+    @include flex(row,space-between,flex-start);
+    &__list{
+        width:45vw;
+        &__title{
+            color:$font-bold-color
+        }
+        &__subTotal{
+            @include flex(row, flex-end)
+        }
+    }
+    &__payment{
+        width:25vw;
+        background-color: $payment-bg-color;
+        border-radius: 10px;
+        color:$mui-input-color;
+    }
+}

@@ -1,0 +1,37 @@
+@import '../../../styles/main.scss';
+.credit-card{
+    height: 600px;
+    padding: 20px;
+    input{
+        color:$mui-input-color;
+    }
+    &__details{
+        text-align: center;
+    }
+    &__expiry{
+        display: flex;
+        &__date{
+            display: flex;
+        }
+    }
+    p{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    &__checkout{
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+.MuiInput-root {
+    border-bottom: 1px solid $mui-input-color !important;
+}
+.MuiSelect-icon {
+    color: $mui-input-color !important;
+}
+
+.MuiSelect-select {
+    color: $mui-input-color !important;
+    font-size: 0.75em !important;
+}
+

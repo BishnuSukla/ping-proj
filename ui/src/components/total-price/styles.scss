@@ -1,0 +1,11 @@
+@import '../../styles/main.scss';
+.subTotal {
+    @include flex(row,unset,center);
+    h4{
+        color: $subtotal-color;
+        margin-right: 20px;
+    }
+    h2{
+        color:$font-bold-color;
+    }
+}
